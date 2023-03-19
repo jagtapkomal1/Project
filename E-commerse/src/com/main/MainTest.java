@@ -7,7 +7,7 @@ import com.product.ProductService;
 import com.productentity.Product;
 
 public class MainTest {
-	public static void main(String[] args) {
+	public static void productInfo() {
         Scanner sc=new Scanner(System.in);
 
         ProductInterface pdi=new ProductService();
