@@ -27,7 +27,7 @@ public class AdminService implements AdminInterface {
         catch (Exception ex){
             ex.printStackTrace();
         }
-		return false;
+		return flag;
 	}
 	
 	@Override
@@ -40,10 +40,8 @@ public class AdminService implements AdminInterface {
             ResultSet rs=stmt.executeQuery(query);
             while(rs.next()){
             	System.out.println("Login succesfully...");
-            	MainTest main = new MainTest();
-                main.productInfo();
+                MainTest.productInfo();
                 flag=true;
-            flag=true;
             }
         }
         catch (Exception ex){
@@ -51,11 +49,6 @@ public class AdminService implements AdminInterface {
         }
 	
 	}
-	
-	
-	
-	
-	
 	
 	@Override
 	public void showAdminDetails() {

@@ -6,6 +6,7 @@ import com.Admin.AdminTest;
 import com.product.ProductInterface;
 import com.product.ProductService;
 import com.productentity.Product;
+import com.user.UserTest;
 
 public class Client {
 	public static void main(String[] args) {
@@ -28,9 +29,8 @@ public class Client {
 	                    test.adminInfo();
 	                    break;
 	                case 2:
-	                    System.out.println("Show all products ");
-	                    pdi.showAllProduct();
-
+	                	System.out.println("User : ");
+	                	UserTest.userInfo();
 	                    break;
 	                case 3:
 	                    

@@ -2,11 +2,6 @@ package com.Admin;
 
 import java.util.Scanner;
 
-import com.main.MainTest;
-import com.product.ProductInterface;
-import com.product.ProductService;
-import com.productentity.Product;
-
 public class AdminTest {
 	public static void adminInfo() {
         Scanner sc=new Scanner(System.in);
@@ -46,7 +41,6 @@ public class AdminTest {
                   String password2 = sc.next();
                   adi.adminLogin(userName, password2);
                   
-
                     break;
                 case 3:
                     System.out.println("Thank You for using Group Q E-commerse!!!");
@@ -54,7 +48,7 @@ public class AdminTest {
                 default:
                     System.out.println("Please enter valid choice..");
             }
-           
+           sc.close();
         }
     }
 }
